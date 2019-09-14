@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="FenderNet.exe" version="1.0.0.7" publicKeyToken="886957d2066dec0b" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="FenderNet" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="FenderNet.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EPPlus.dll" size="1298432">
+      <assemblyIdentity name="EPPlus" version="4.5.3.2" publicKeyToken="EA159FDAA78159A1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wyzvvR6gUe068G5/ud1VhZimEvBCFkFAzYvnIqNRvGM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FenderNet.exe" size="24544">
+      <assemblyIdentity name="FenderNet" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3iNyM/sKnLlrBi0SJ7FH/FFNwncdASMDH4/vAD9QpyQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="FenderNet.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=THERULEDEMON-NO\Dmitr" issuerKeyHash="123585a044adf449f0b9f500855db806ae614b7e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>AMBASX67ODvtyf1sAIvYHgbX15Kgra0dRNlEnnI6a1Y=</DigestValue></Reference></SignedInfo><SignatureValue>Lj0MUv9iaroJFNa/NNjeY1VAOceenG5BDTq5ZhZgqgOmuild08KuCFtZmdyM/Cz1wu7hzbrNiVXh+FVOgcyxVEIemCzZ1VTYKpFk1e43NTcPJuhYhN0DSDbxd42hDeLhkMhTlUttPGCAPiZq0zrsXmnCU0gX/y3HorXExK6f2kM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uE2or0hSbjl3Nl7x+LTGwPHw7RmGBrNZ1X50DeCmtPKzGOxgzolB6xqjTwKlnZgasiA/GK9+mHXD6iyWHDMf5ZEtH32rP6r4EmXFn0VlQ4eyc+bQmOWlpVbykbxWo2CAEw2+8+8CAPsatwuJWE1P/ZFGGKIuo4TnbbNKWedmaL0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="566b3a729e44d9441dadada092d7d7061ed88b006cfdc9ed3b38bb7e4940c000" Description="" Url=""><as:assemblyIdentity name="FenderNet.exe" version="1.0.0.7" publicKeyToken="886957d2066dec0b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=THERULEDEMON-NO\Dmitr</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>d/0WxUaCq2nE5TR5dbf9jjSMp67xBOr5zNshxY1QQkk=</DigestValue></Reference></SignedInfo><SignatureValue>eI0wpF0DE2vkXx/hlHlpyDbbtZN/kP7/CjpXEdt9s0mQ/ogu3Ll6LCIMd28OdqswlFiy8zO4NMprL2mx8aRparofvH62oxWt0+VGeO1wmqGmDe0AzMOcoN2OlZjm8V4R0OdUHJjqQOU8K41H2cGrPc0TV5UIustM1slyvckipnc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uE2or0hSbjl3Nl7x+LTGwPHw7RmGBrNZ1X50DeCmtPKzGOxgzolB6xqjTwKlnZgasiA/GK9+mHXD6iyWHDMf5ZEtH32rP6r4EmXFn0VlQ4eyc+bQmOWlpVbykbxWo2CAEw2+8+8CAPsatwuJWE1P/ZFGGKIuo4TnbbNKWedmaL0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQP/sXPGf5kKZMWQM7pLVDPDANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioAVABIAEUAUgBVAEwARQBEAEUATQBPAE4ALQBOAE8AXABEAG0AaQB0AHIwHhcNMTkwODA2MTMzODE2WhcNMjAwODA1MTkzODE2WjA1MTMwMQYDVQQDHioAVABIAEUAUgBVAEwARQBEAEUATQBPAE4ALQBOAE8AXABEAG0AaQB0AHIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALhNqK9IUm45dzZe8fi0xsDx8O0ZhgazWdV+dA3gprTysxjsYM6JQesao08CpZ2YGrIgPxivfph1w+oslhwzH+WRLR99qz+q+BJlxZ9FZUOHsnPm0JjlpaVW8pG8VqNggBMNvvPvAgD7GrcLiVhNT/2RRhiiLqOE522zSlnnZmi9AgMBAAEwDQYJKoZIhvcNAQELBQADgYEASjP/PdvkGKMEtcLPXY9rUjp6oK6mYT/kOmPmr3Nx+ioDPEJBqXzqzHP1OqaiOOG9/9ZikFkHSbH1oWV4jAjF6OYsfK7zb0gXtICNw4rPHv+TuZt2huDgXeMRKkbQ+NYBnlpCZD2Rj/j/Q/g/6FRc4Ft3pN2lGxW95hPXEmkdi8Q=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
