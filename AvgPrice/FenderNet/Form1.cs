@@ -171,7 +171,7 @@ namespace FenderNet
                 excelCreate.SaveAs(excelFile);
                 System.Diagnostics.Process.Start(fileName.Substring(0, fileName.LastIndexOf(@"\")) + @"\Result.xls");
             }
-            OutputTXT.Text = "Keskmised hinnad leitud++";
+            OutputTXT.Text = "Keskmised hinnad leitud";
         }
         /*
          Save modified prices to a new file.             
