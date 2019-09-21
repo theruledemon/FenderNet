@@ -168,9 +168,9 @@ namespace FenderNet
                 }
 
 
-                FileInfo excelFile = new FileInfo(fileName.Substring(0, fileName.LastIndexOf(@"\")) + @"\Result.xls");
+                FileInfo excelFile = new FileInfo(fileName.Substring(0, fileName.LastIndexOf(@"\")) + @"\Result.xlsx");
                 excelCreate.SaveAs(excelFile);
-                System.Diagnostics.Process.Start(fileName.Substring(0, fileName.LastIndexOf(@"\")) + @"\Result.xls");
+                System.Diagnostics.Process.Start(fileName.Substring(0, fileName.LastIndexOf(@"\")) + @"\Result.xlsx");
             }
             OutputTXT.Text = "Keskmised hinnad leitud";
         }
@@ -179,7 +179,7 @@ namespace FenderNet
         */
         private void button3_Click(object sender, EventArgs e)
         {
-            String resultFile = (FileTextBox.Text).Substring(0, fileName.LastIndexOf(@"\")) + @"\Result.xls";
+            String resultFile = (FileTextBox.Text).Substring(0, fileName.LastIndexOf(@"\")) + @"\Result.xlsx";
             int sheet = 1;
             int row = 2;
             List<string> priceToReplace = new List<string>();
@@ -219,7 +219,7 @@ namespace FenderNet
                 row++;
                 
             }
-            wb.SaveAs((FileTextBox.Text).Substring(0, fileName.LastIndexOf(@"\")) + @"\Replaced.xls", _Excel.XlFileFormat.xlOpenXMLWorkbook, Missing.Value,
+            wb.SaveAs((FileTextBox.Text).Substring(0, fileName.LastIndexOf(@"\")) + @"\Replaced.xlsx", _Excel.XlFileFormat.xlOpenXMLWorkbook, Missing.Value,
     Missing.Value, false, false, _Excel.XlSaveAsAccessMode.xlNoChange,
     _Excel.XlSaveConflictResolution.xlUserResolution, true,
     Missing.Value, Missing.Value, Missing.Value);
