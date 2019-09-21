@@ -14,6 +14,7 @@ using Microsoft.Office.Interop.Excel;
 using _Excel = Microsoft.Office.Interop.Excel;
 using System.Globalization;
 using OfficeOpenXml;
+using System.Reflection;
 
 namespace FenderNet
 {
@@ -218,7 +219,10 @@ namespace FenderNet
                 row++;
                 
             }
-            wb.SaveAs((FileTextBox.Text).Substring(0, fileName.LastIndexOf(@"\")) + @"\Replaced.xls");
+            wb.SaveAs((FileTextBox.Text).Substring(0, fileName.LastIndexOf(@"\")) + @"\Replaced.xls", _Excel.XlFileFormat.xlOpenXMLWorkbook, Missing.Value,
+    Missing.Value, false, false, _Excel.XlSaveAsAccessMode.xlNoChange,
+    _Excel.XlSaveConflictResolution.xlUserResolution, true,
+    Missing.Value, Missing.Value, Missing.Value);
             wb.Close();
             OutputTXT.Text = "Salvestatud";
             
