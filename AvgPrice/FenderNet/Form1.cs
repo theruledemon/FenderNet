@@ -60,6 +60,12 @@ namespace FenderNet
             string lookFor = "";
             int sheet = 1;
 
+            //first line is headers
+            if (from <= 1)
+            {
+                from = 2;
+            }
+
             _Application excel = new _Excel.Application();
             Workbook wb = excel.Workbooks.Open(fileName);
             Worksheet ws = wb.Worksheets[sheet];
